@@ -33,9 +33,66 @@ async function main(){
 
 async function getAllCourses(){
 
-    const response = await fetch("http://localhost:3000/debug/get_all");
+    const response = [
+        {
+            "code": "4010",
+            "name": "プログラミングA",
+            "credits": 3,
+            "year": 1,
+            "semester": "春夏",
+            "category": "必修"
+        },
+        {
+            "code": "4011",
+            "name": "プログラミングB",
+            "credits": 3,
+            "year": 1,
+            "semester": "秋冬",
+            "category": "必修"
+        },
+        {
+            "code": "4012",
+            "name": "プログラミングC",
+            "credits": 3,
+            "year": 2,
+            "semester": "春夏",
+            "category": "必修"
+        },
+        {
+            "code": "4120",
+            "name": "情報数学基礎",
+            "credits": 2,
+            "year": 2,
+            "semester": "春夏",
+            "category": "必修"
+        },
+        {
+            "code": "0011",
+            "name": "数学A",
+            "credits": 2,
+            "year": 2,
+            "semester": "春夏",
+            "category": "B群"
+        },
+        {
+            "code": "0012",
+            "name": "数学B",
+            "credits": 2,
+            "year": 2,
+            "semester": "春夏",
+            "category": "B群"
+        },
+        {
+            "code": "138145",
+            "name": "基礎物理学実験",
+            "credits": 1,
+            "year": 2,
+            "semester": "春",
+            "category": "選択"
+        }
+        ];
 
-    const courses = await response.json();
+    const courses = response;
 
     return courses;
 }
