@@ -1,0 +1,43 @@
+.course-element {
+
+    display: grid;
+
+    grid-template-columns: 200px 80px 80px 80px 80px;
+
+    align-items: center;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    user-select: none;
+}
+
+.course-code {
+    display: none;
+}
+.course-name {
+    color: black;
+}
+.course-credits::after {
+    content: "単位";
+}
+.course-year::after {
+    content: "年次";
+}
+.course-category{
+    display: none;
+}
+.course-status{
+    display: none;
+}
+
+.status-none{
+    background-color: white;
+}
+.status-planned{
+    background-color: lightgreen;
+}
+.status-done{
+    background-color: skyblue;
+}
